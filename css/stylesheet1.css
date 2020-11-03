@@ -96,6 +96,8 @@ picture img{
 }
 
 footer{
+    display: flex;
+    justify-content: space-between;
     width: 85%;
     margin: auto;
     padding: 2vw;
