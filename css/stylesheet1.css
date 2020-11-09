@@ -4,6 +4,8 @@
 }
 body{
     font-size: 18px;
+    font-family: Helvetica, serif;
+
 }
 header{
     display: flex;
@@ -11,19 +13,45 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     min-height: 95vh;
-    background-image: url(../images/klær.png);
+    background-image: url(../images/hangedclothes.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-header section{
+
+p {
+  color: black;
+}
+/* header section{
     margin-top: 25vh;
     width: 35%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+} */
+
+/* start */
+/* .container {
+  position: relative;
+  text-align: center;
+  color: white;
+} */
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #white;
+  text-align: center;
+  background-color: #ffc2bf;
+  padding: 5vh;
 }
+
 .header-container{
+    position: relative;
+    text-align: center;
     display: flex;
     justify-content: flex-end;
     color: white;
@@ -32,6 +60,10 @@ header section{
     padding: 4vw;
 }
 .headertext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .arrow{
     border-radius: 40%;
@@ -42,9 +74,40 @@ header section{
     align-items: center;
 }
 
+.section1{
+  padding: 2px;
+  margin: 100vh, 100vw;
+  min-height: 30vh;
+  width: 100%;
+  background-color: #ffc2bf;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section2{
+  padding: 2px;
+  margin: 100vh, 100vw;
+  min-height: 30vh;
+  width: 100%;
+  background-color: white;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section3{
+  padding: 2px;
+  margin: 100vh, 100vw;
+  min-height: 30vh;
+  width: 100%;
+  background-color: #c2f7ff;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 main{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 main section{
@@ -65,23 +128,32 @@ picture img{
 .textbox1{
     padding: 3vw;
     width: 45%;
-    
+    text-align: justify;
+
 }
 .textbox2{
     flex: 3;
     padding: 3vw;
     width: 45%;
+    text-align: justify;
 }
 .textbox3{
     text-align: center;
     padding: 3vw;
-    width: 100%;   
+    width: 100%;
+    text-align: justify;
 }
 .picturebox1{
     width: 45%;
+    border-width: 5px;
+    border-style: solid;
+
 }
 .picturebox2{
     width: 45%;
+    margin: auto;
+    border-width: 5px;
+    border-style: solid;
 }
 .picturebox1 p{
     font-weight: bold;
@@ -94,9 +166,12 @@ picture img{
 
 .finalimg{
     display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border-width: 5px;
+    border-style: solid;
+
 }
 @media only screen and (max-width: 1000px){
     .picturebox1{
@@ -106,12 +181,12 @@ picture img{
         width: 100%;
         height: 500px;
     }
-    
+
     .textbox1{
         width: 100%;
     }
     .textbox3{
-        width: 45%;
+        width: 100%;
     }
     .finalimg{
         margin-top: auto;
@@ -122,16 +197,22 @@ picture img{
 
 footer{
     display: flex;
-    width: 85%;
-    margin: auto;
-    padding: 2vw;
-    border: black solid 3px;
+    width: 100%;
+    margin: 100vh, 100vw;
+    padding: 2px;
+    min-height: 30vh;
+    background-color: #ced0d1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 .footer1{
-    width: 50%;
+    width: 0%;
+    text-align: right;
 }
 .footer2{
-    text-align: right;
+    text-align: left;
     width: 50%;
 }
 .footer2 ul{
